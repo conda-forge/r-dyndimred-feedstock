@@ -25,12 +25,14 @@ requirements:
     - {{posix}}zip               # [win]
   host:
     - r-base
-    - r-dynutils >=1.0.3
+    - r-dynutils >=1.0.5
     - r-irlba
+    - r-lmds
   run:
     - r-base
-    - r-dynutils >=1.0.3
+    - r-dynutils >=1.0.5
     - r-irlba
+    - r-lmds
 
 test:
   commands:
