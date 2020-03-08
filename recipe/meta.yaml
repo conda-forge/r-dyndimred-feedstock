@@ -1,4 +1,4 @@
-{% set version = '1.0.2' %}
+{% set version = "1.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dyndimred_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dyndimred/dyndimred_{{ version }}.tar.gz
-  sha256: 40c74c1f99e8fed4100bcef7ad67a4597f1ac279cf6609f492c0ed40371216c7
+  sha256: e52d0adb00ef22d3696e507dff3d87d3f160dd012d265f1d7fef795b167cf60f
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -40,14 +40,12 @@ test:
 about:
   home: http://github.com/dynverse/dyndimred
   license: GPL-3
-  summary: Provides a common interface for applying dimensionality reduction methods, such as
-    Principal Component Analysis ('PCA'), Independent Component Analysis ('ICA'), diffusion
-    maps, Locally-Linear Embedding ('LLE'), t-distributed Stochastic Neighbor Embedding
-    ('t-SNE'), and Uniform Manifold Approximation and Projection ('UMAP'). Has built-in
-    support for sparse matrices.
+  summary: Provides a common interface for applying dimensionality reduction methods, such as Principal Component Analysis ('PCA'), Independent Component Analysis
+    ('ICA'), diffusion maps, Locally-Linear Embedding ('LLE'), t-distributed Stochastic Neighbor Embedding ('t-SNE'), and Uniform Manifold Approximation and Projection
+    ('UMAP'). Has built-in support for sparse matrices.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
