@@ -3,7 +3,7 @@ About r-dyndimred
 
 Home: http://github.com/dynverse/dyndimred
 
-Package license: GPL-3
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dyndimred-feedstock/blob/master/LICENSE.txt)
 
