@@ -1,11 +1,11 @@
-About r-dyndimred
-=================
+About r-dyndimred-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dyndimred-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/dynverse/dyndimred
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dyndimred-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides a common interface for applying dimensionality reduction methods, such as Principal Component Analysis ('PCA'), Independent Component Analysis ('ICA'), diffusion maps, Locally-Linear Embedding ('LLE'), t-distributed Stochastic Neighbor Embedding ('t-SNE'), and Uniform Manifold Approximation and Projection ('UMAP'). Has built-in support for sparse matrices.
 
