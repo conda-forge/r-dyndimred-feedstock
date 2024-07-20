@@ -1,6 +1,5 @@
 {% set version = "1.0.4" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-dyndimred
@@ -13,8 +12,7 @@ source:
   sha256: 7039d08e78f8ebf9276b68bd7a9169b6275e48a55e70d943fda0075ddf2a44e6
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
